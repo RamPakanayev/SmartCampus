@@ -1,0 +1,102 @@
+* {
+}
+html {
+  /* font-size: 62.5%; */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+
+  background: url("https://is.hit.ac.il/nidp/images/hit/images/backgrounds/puffs.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.content-b {
+  /* display: flex; */
+  flex-direction: column;
+}
+.content-c {
+  margin-top: 5%;
+  display: flex; /*align child vertical*/
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.content-d {
+  background-color: whitesmoke;
+  width: 300px;
+  opacity: 0.7;
+  border-radius: 10%;
+  text-align: center;
+  height: 280px;
+}
+.top-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.hit-img {
+  width: 10%;
+  height: 100;
+  margin: auto 45%;
+}
+
+.lable {
+  position: relative;
+  top: 2px;
+  float: left;
+  text-align: center;
+  direction: ltr;
+  font-size: small;
+  font-family: sans-serif, serif, arial;
+  margin-left: 10px;
+}
+
+.forgotten {
+  font-size: 8px;
+  margin-top: 70px;
+  margin-left: 33%;
+  font-family: sans-serif, serif, arial;
+}
+.input {
+  width: 50%;
+  border: 3%;
+  margin: auto;
+  font-size: 15px;
+}
+.input-1 {
+  margin-left: 42px;
+}
+.input-2 {
+  margin-left: 42px;
+}
+.input-3 {
+  margin-left: 73px;
+}
+.input-4 {
+  margin-left: 49px;
+}
+
+.level {
+  margin-top: 15px;
+  margin: 10px 10px;
+}
+.level-1 {
+  margin-top: 15%;
+}
+
+.heading {
+  position: relative;
+  top: 20px;
+}
+.input-login {
+  position: relative;
+  border: 3%;
+  margin-top: 20px;
+  font-size: 15px;
+}
