@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-</head>
-<body>
-    <center>
-   <img src="logos\logo50.png" width="200" height="50" alt="">
-    <h1><strong>Smart Campus</strong></h1><hr>
-    <table>
-        <tr>
-            <td><h3>User name:</h3></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><h3>Password:</h3></td>
-            <td><input type="password"></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="PasswordChange.html">change password</a><br>
-                Don't have an account? <a href="SignUp.html">Sign Up</a>
-            </td>
-            <td>
-                <button type="Login" name="Login"><a href="HomePage.html">Login</a></button>
-            </td>
-        </tr>
-    </table>
-</center>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css\LoginPage.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <div class="content-b">
+      <img class="hit-img" src="logos\logo50.png" alt="" />
+    </div>
+    <div class="content-c">
+      <div class="content-d">
+        <span class="heading">Login page</span>
+        <div class="level level-1">
+          <span class="lable lable-1">Username:</span>
+          <input class="input input-1" name="Ecom_User_ID" type="text" value="" />
+        </div>
+        <div class="level level-2">
+          <span class="lable label-2">Password:</span>
+
+          <input class="input input-2" name="Password" type="password" />
+        </div>
+          <a href="HomePage.html">
+
+            <div class="input-login">
+              <input
+                type="submit"
+                style="
+                  font-size: 1em;
+                  font-family: sans-serif, serif, arial;
+                  direction: rtl;
+                "
+                value="Login"
+              />
+
+          </a>
+        </div>
+        <a class="link link-forgotPW" title="Password Recovery" href="PasswordChange.html">Forgot Password</a>
+        <a class="link SignUp" title="SignUp" href="SignUp.html">SignUp</a>
+      </div>
+    </div>
+  </body>
 </html>
