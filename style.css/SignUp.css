@@ -18,6 +18,7 @@ body {
 }
 .content-b {
   /* display: flex; */
+  margin-top: 2.5%;
   flex-direction: column;
 }
 .content-c {
