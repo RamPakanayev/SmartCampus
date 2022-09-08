@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+
+  /* background: url("https://is.hit.ac.il/nidp/images/hit/images/backgrounds/building.jpg") */
+  /* no-repeat center center fixed; */
+  background-color: #f7f6dc;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content-b {
+  /* display: flex; */
+
+  flex-direction: column;
+}
+.hit-img {
+  width: 10%;
+  height: 100;
+  margin: auto 45%;
+}
+
+.content-d {
+  display: flex; /*align child vertical*/
+  justify-content: center;
+  align-items: center;
+}
