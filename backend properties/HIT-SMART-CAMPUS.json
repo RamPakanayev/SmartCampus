@@ -1,0 +1,28 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "PostgreSQL 14",
+            "Group": "Servers",
+            "Host": "localhost",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "SSLMode": "prefer",
+            "Comment": "Auto-detected PostgreSQL 14 installation with the data directory at C:\\Program Files\\PostgreSQL\\14\\data"
+        },
+        "2": {
+            "Name": "HIT-SMART-CAMPUS",
+            "Group": "Servers",
+            "Host": "localhost",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "SSLMode": "prefer",
+            "SSLCompression": 0,
+            "Timeout": 10,
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0
+        }
+    }
+}
