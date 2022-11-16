@@ -2,22 +2,158 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
     <link rel="stylesheet" href="style.css\HomePage.css" />
-    <title>Home page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      #map {
+        height: 89vh;
+        width: 100%;
+
+        margin: auto;
+      }
+    </style>
+    <title>Maps Project</title>
   </head>
-
   <body>
-    <div class="content-b">
-      <img class="hit-img" src="logos\logo50.png" alt="" />
-    </div>
-
-    <div class="content-c">
-      <h1>Hello World</h1>
-      <div class="content-d">
-        <img src="images\hit_map.jpg" alt="" />
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #539d9d">
+      <div class="container-fluid">
+        <img class="navbar-brand hit-img" src="logos\HIT-Light-logo1.png" alt=""
+          />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="HomePage.html"> Home</a></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chillers
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Chiller 1</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 2</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 3</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 4</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 5</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 6</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 7</a></li>
+                <li><a class="dropdown-item" href="#">Chiller 8</a></li>
+              
+          
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <li><a class="dropdown-item" href="#">Chiller 501</a></li>
+                  <li><a class="dropdown-item" href="#">Chiller 502</a></li>
+                  <li><a class="dropdown-item" href="#">Chiller 503</a></li>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                buildings
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="#">building 1</a></li>
+                <li><a class="dropdown-item" href="#">building 2</a></li>
+                <li><a class="dropdown-item" href="#">building 3</a></li>
+                <li><a class="dropdown-item" href="#">building 4</a></li>
+                <li><a class="dropdown-item" href="#">building 5</a></li>
+                <li><a class="dropdown-item" href="#">building 6</a></li>
+                <li><a class="dropdown-item" href="#">building 7</a></li>
+                <li><a class="dropdown-item" href="#">building 8</a></li>
+              
+          
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <li><a class="dropdown-item" href="#">building 501</a></li>
+                  <li><a class="dropdown-item" href="#">building 502</a></li>
+                  <li><a class="dropdown-item" href="#">building 503</a></li>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Link1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="LogInPage.html"> Log-Out</a></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Type Here . . ."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
+    </nav>
+   
+    <div class="content-b">
+      <div id="map"></div>
     </div>
+    <script src="JavaScript\HomePage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
