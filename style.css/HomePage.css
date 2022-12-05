@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   color: black;
 
+<<<<<<< Updated upstream
   /* background: url("https://is.hit.ac.il/nidp/images/hit/images/backgrounds/building.jpg") */
   /* no-repeat center center fixed; */
   background-color: #f7f6dc;
@@ -27,4 +28,31 @@ body {
   display: flex; /*align child vertical*/
   justify-content: center;
   align-items: center;
+=======
+  margin: auto 0 auto 0;
+}
+.navbar {
+  height: 45px;
+}
+.navbar-brand {
+  width: 7%;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.aa {
+  width: 300px;
+  text-align: center;
+  display: block;
+  background-color: #539d9d;
+  color: aliceblue;
+}
+.BuildingPhoto {
+}
+.leaflet-popup-content-wrapper {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.sidebar-header {
+>>>>>>> Stashed changes
 }
