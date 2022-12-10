@@ -214,7 +214,7 @@ var myGeoJSON = {
     },
   ],
 };
-//========================source========================
+
 
 L.geoJSON(myGeoJSON, {
   style: function (feature) {
@@ -224,147 +224,137 @@ L.geoJSON(myGeoJSON, {
     };
   },
   onEachFeature: function (feature, layer) {
-    layer.bindPopup(
-      `<div class="sidebar-header">
 
-    <h1 class="aa">` +
-        feature.properties.name +
-        `</h1></b>
-           <p>LoremOposum</p>
 
+    if (feature.properties.name == "B1") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
+
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B1and 2.jpg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
           </div>`
-    );
-    //     if (feature.properties.name == "B1") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
+      );
+    }
+    if (feature.properties.name == "B2") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B1and 2.jpg" height="150px" alt="" />
+          </br></br><a href="">show more</a></div>`
+      );
+    }
+    if (feature.properties.name == "B3") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B2") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B500plus.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a></div>`
+      );
+    }
+    if (feature.properties.name == "B4") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B500plus.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B5") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B3") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B5.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B6") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B6.jpg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B7") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B4") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B7.jpg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B8") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B8.jpg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B501") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B5") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B500plus.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B502") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B500plus.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
+    if (feature.properties.name == "B503") {
+      layer.bindPopup(
+        `<div class="sidebar-header">
 
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B6") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B7") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B8") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B501") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B502") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
-    //     if (feature.properties.name == "B503") {
-    //       layer.bindPopup(
-    //         `<div class="sidebar-header">
-
-    //       <h1 class="aa">` +
-    //           feature.properties.name +
-    //           `</h1></b>
-    //              <p>LoremOposum</p>
-
-    //             </div>`
-    //       );
-    //     }
+          <h1 class="aa">` +
+          feature.properties.name +
+          `</h1></b>
+          <img class="BuildingPhoto" src="imges/B500plus.jpeg" height="150px" alt="" />
+          </br></br><a href="">show more</a>
+                </div>`
+      );
+    }
   },
 }).addTo(mymap);
