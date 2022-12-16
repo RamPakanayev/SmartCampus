@@ -1,12 +1,37 @@
-.hit-img {
-  position: sticky;
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
 
-  margin: auto 0 auto 0%;
+  margin: auto 0 auto 0;
 }
-
+.navbar {
+  height: 45px;
+}
 .navbar-brand {
-  width: 4%;
+  width: 7%;
   margin-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.hit-img {
+  height: 45px;
+  width: 45px;
+  margin-left: 1%;
+}
+.aa {
+  width: 300px;
+  text-align: center;
+  display: block;
+  background-color: #539d9d;
+  color: aliceblue;
+}
+.BuildingPhoto {
+}
+.leaflet-popup-content-wrapper {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.sidebar-header {
 }
