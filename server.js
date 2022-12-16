@@ -8,7 +8,7 @@ app.get("/HomePage", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.send("Hello World");
 });
 
 app.listen(5050, () => {
