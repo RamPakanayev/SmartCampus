@@ -214,7 +214,7 @@ var myGeoJSON = {
     },
   ],
 };
-//========================source========================
+
 
 L.geoJSON(myGeoJSON, {
   style: function (feature) {
@@ -224,16 +224,7 @@ L.geoJSON(myGeoJSON, {
     };
   },
   onEachFeature: function (feature, layer) {
-    // layer.bindPopup(
-    //   `<div class="sidebar-header">
 
-    // <h1 class="aa">` +
-    //     feature.properties.name +
-    //     `</h1></b>
-    //        <p>LoremOposum</p>
-
-    //       </div>`
-    // );
 
     if (feature.properties.name == "B1") {
       layer.bindPopup(
