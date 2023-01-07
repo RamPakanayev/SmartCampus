@@ -5,3 +5,6 @@ This project is an interactive map of the Holon Institute of Technology (HIT) ca
 To run this project locally, clone the repository and open the index.html file in a web browser.
 
 https://www.youtube.com/embed/LKYSEYZRwjQ
+
+illustration:
+<img src="imges\webDemo.png" alt="">
