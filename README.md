@@ -6,5 +6,5 @@ To run this project locally, clone the repository and open the index.html file i
 
 https://www.youtube.com/embed/LKYSEYZRwjQ
 
-illustration:
+Illustration:
 <img src="imges\webDemo.png" alt="">
